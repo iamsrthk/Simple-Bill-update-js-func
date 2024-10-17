@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Bill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Bill</h1>
+        <div class="bill">
+            <div class="item-row">
+                <span class="item-name">Paneer Tikka</span>
+                <button class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="plus-btn">+</button>
+                <span class="price" data-price="150">₹150</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Butter Naan</span>
+                <button class="minus-btn">-</button>
+                <span class="quantity">2</span>
+                <button class="plus-btn">+</button>
+                <span class="price" data-price="40">₹40</span>
+            </div>
+            <!-- Add more items here as needed -->
+        </div>
+        <div class="total-container">
+            <h2>Total: ₹<span id="total-amount">0</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
